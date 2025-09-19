@@ -1,5 +1,33 @@
-<html>
-  <body>
-    
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+
+  <!-- 1. 중앙 결과물 섹션 -->
+  <section id="main-display" class="mb-4 d-flex flex-column align-items-center justify-content-center border rounded bg-white shadow-sm p-4" style="max-width:550px; margin:auto;">
+    <img id="main-image" src="images/Result-Imgs/DNS-Server/[Server] bof1.PNG" class="main-img img-fluid rounded shadow-sm mb-3" alt="대표 이미지">
+    <h4 id="main-title" class="mb-2 text-primary fw-bold">DNS</h4>
+    <p id="main-desc" class="mb-2 text-secondary small">DNS 서버의 구축 결과와, 주요 기능 소개 샘플입니다.</p>
+    <a id="main-link" href="html/DNS.html" class="btn btn-outline-primary" target="_blank">해당 프로젝트 상세 보기</a>
+  </section>
+  
+  <!-- 2. 프로젝트 리스트 + 접기/펼치기 버튼 -->
+  <div class="d-flex align-items-center justify-content-between mb-2" style="max-width: 500px; margin: 0 auto;">
+    <h5 class="mb-0">프로젝트 목록</h5>
+    <button id="list-toggle" class="btn btn-outline-secondary btn-sm ms-2" aria-expanded="true">
+      <span id="toggle-icon">&#9660;</span>
+    </button>
+  </div>
+  <ul id="project-list" class="list-group list-group-flush mx-auto collapse show" style="max-width:500px;">
+    <!-- JS에서 동적으로 생성됨 -->
+  </ul>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
